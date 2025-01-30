@@ -23,11 +23,12 @@ def read_table_of_contents(file_path):
             continue
 
         # Определяем подпункт
-        if line[0].isdigit() and '.' in line:
-            subpoint = line
+#        if line[0].isdigit() and '.' in line:
+#            subpoint = line
 #            print(f"Книга: {book_title}, Глава: {current_chapter}, Подпункт: {subpoint}")
 #            print(f"Напиши подпункт {subpoint} {current_chapter} книги {book_title}")
-        content = content + (f"Напиши подпункт {subpoint} {current_chapter} книги {book_title}")+ "\n"
+#        content = content + (f"Напиши подпункт {subpoint} {current_chapter} книги {book_title}")+ "\n"
+        content = content + (f"Напиши содержание {current_chapter} книги {book_title}")+ "\n"
     print(content)
 
 # Путь к файлу с оглавлением
